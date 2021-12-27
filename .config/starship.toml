@@ -42,4 +42,3 @@ right_format = """$kubernetes"""
 [kubernetes]
 format = '☸ [$context](bold green)'
 disabled = false
-

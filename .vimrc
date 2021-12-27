@@ -19,7 +19,7 @@ Plug 'lifepillar/vim-mucomplete'          "autocomplete
 Plug 'yggdroot/indentline'                "show indent lines
 "Plug 'craigemery/vim-autotag'
 Plug 'airblade/vim-gitgutter'             "sidebar git status
-Plug 'tpope/vim-fugitive'                 "git wrapper
+"Plug 'tpope/vim-fugitive'                 "git wrapper
 "Plug 'w0rple'                           "async linting
 "Plug 'chiel92/vim-autoformat'             "formatter - needs setup
 
@@ -73,7 +73,6 @@ set directory=~/.vim/tmp/                   " for the swap files
 syntax enable
 set background=light
 set t_Co=16
-"let g:solarized_termcolors=256
 colorscheme solarized
 
 "set noshowmode
