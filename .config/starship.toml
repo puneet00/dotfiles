@@ -4,7 +4,6 @@ $username\
 $hostname\
 $shlvl\
 $singularity\
-$kubernetes\
 $directory\
 $vcsh\
 $git_branch\
@@ -38,7 +37,9 @@ $status\
 $shell\
 $character"""
 
+right_format = """$kubernetes"""
+
 [kubernetes]
-format = '[$context](dimmed green) '
+format = '☸ [$context](bold green)'
 disabled = false
 
