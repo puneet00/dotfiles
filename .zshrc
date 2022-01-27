@@ -75,6 +75,7 @@ plugins=(
   git
   z
   hacker-quotes
+  kubectl
   zsh-nvm
   zsh-autosuggestions
   zsh-history-substring-search
