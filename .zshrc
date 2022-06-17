@@ -95,6 +95,7 @@ if [ -f ~/.zsh_local_config ]; then
 else
   print "ERROR: missing file ~/.zsh_local_config"
 fi
+export KUBE_EDITOR="vim"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -119,3 +120,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/nixmage/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
