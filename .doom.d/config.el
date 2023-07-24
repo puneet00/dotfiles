@@ -26,11 +26,12 @@
 
 (setq doom-font (font-spec :family "iosevka" :size 14 :weight 'regular))
 
+(setq initial-frame-alist '((top . 1) (left . 1) (width . 114) (height . 32)))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-solarized-light)
+(setq doom-theme 'spacemacs-light)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
