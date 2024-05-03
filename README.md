@@ -36,3 +36,8 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 
 ### starship
 https://starship.rs/guide/
+
+### cli tools
+```
+sudo apt install fzf
+```
