@@ -40,4 +40,5 @@ https://starship.rs/guide/
 ### cli tools
 ```
 sudo apt install fzf
+sudo apt-get install silversearcher-ag
 ```
