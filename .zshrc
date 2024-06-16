@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/nixmage/.oh-my-zsh"
+export ZSH="./.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -76,7 +76,6 @@ plugins=(
   z
   hacker-quotes
   kubectl
-  zsh-nvm
   zsh-autosuggestions
   zsh-history-substring-search
   )
@@ -86,7 +85,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 # User configuration
-eval "$(starship init zsh)"
 
 export TERM=xterm-256color
 
@@ -122,6 +120,7 @@ export KUBE_EDITOR="vim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ggpullall="find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;"
 
+eval "$(starship init zsh)"
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/nixmage/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
