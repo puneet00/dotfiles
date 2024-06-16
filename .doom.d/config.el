@@ -24,7 +24,7 @@
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
-(setq doom-font (font-spec :family "iosevka" :size 14 :weight 'regular))
+(setq doom-font (font-spec :family "iosevka" :size 15 :weight 'regular))
 
 (setq initial-frame-alist '((top . 1) (left . 1) (width . 114) (height . 32)))
 
@@ -58,3 +58,11 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+(setq projectile-project-search-path '(("~/Workspace" . 2)))
+(use-package! tree-sitter
+  :config
+  (require 'tree-sitter-langs)
+  (global-tree-sitter-mode)
+  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
