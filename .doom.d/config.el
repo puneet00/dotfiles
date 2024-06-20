@@ -3,7 +3,7 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 (global-visual-line-mode t)
-(setq doom-solarized-dark-brighter-text t)
+;; (setq doom-solarized-dark-brighter-text t)
 (setq ruby-insert-encoding-magic-comment nil)
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
@@ -24,14 +24,14 @@
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
-(setq doom-font (font-spec :family "iosevka" :size 15 :weight 'regular))
+(setq doom-font (font-spec :family "iosevka" :size 16 :weight 'regular))
 
 (setq initial-frame-alist '((top . 1) (left . 1) (width . 114) (height . 32)))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'spacemacs-light)
+(setq doom-theme 'doom-solarized-light)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -66,3 +66,21 @@
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
+;; (custom-set-faces!
+;;     '((org-block) :background "#fdf6e3") )
+
+;; (custom-set-faces
+;;   '(default ((t (:background "#000000"))))
+;;   '(hl-line ((t (:background "#000000"))))
+;;  )
+;; (set-face-attribute 'org-block nil :background
+;;                     (color-darken-name
+;;                      (face-attribute 'default :background) 3))
+;; (custom-set-faces
+;;  '(org-block-begin-line
+;;    ((t (:underline "#A7A6AA" :background "#fdf6e3" :extend t))))
+;;  '(org-block
+;;    ((t (:background "#eee8d5" :extend t))))
+;;  '(org-block-end-line
+;;    ((t (:overline "#A7A6AA" :eackground "#fdf6e3" :extend t))))
+;;  )
