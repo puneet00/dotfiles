@@ -124,9 +124,12 @@ eval "$(starship init zsh)"
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/nixmage/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+<<<<<<< Updated upstream
 
 if   [[ "$OSTYPE" == "linux-gnu" ]]; then
   PATH="$HOME/.local/bin:$PATH"
 elif [[ "$OSTYPE" == "darwin"*  ]]; then
-
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 fi

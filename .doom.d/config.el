@@ -66,21 +66,23 @@
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
-;; (custom-set-faces!
-;;     '((org-block) :background "#fdf6e3") )
+(setq auto-save-default t
+      make-backup-files t)
+;; Maximize the window upon startup.
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+;; Truncate lines in ivy childframes
+(setq posframe-arghandler
+      (lambda (buffer-or-name key value)
+        (or (and (eq key :lines-truncate)
+                 (equal ivy-posframe-buffer
+                        (if (stringp buffer-or-name)
+                            buffer-or-name
+                          (buffer-name buffer-or-name)))
+                 t)
+            value)))
 
-;; (custom-set-faces
-;;   '(default ((t (:background "#000000"))))
-;;   '(hl-line ((t (:background "#000000"))))
-;;  )
-;; (set-face-attribute 'org-block nil :background
-;;                     (color-darken-name
-;;                      (face-attribute 'default :background) 3))
-;; (custom-set-faces
-;;  '(org-block-begin-line
-;;    ((t (:underline "#A7A6AA" :background "#fdf6e3" :extend t))))
-;;  '(org-block
-;;    ((t (:background "#eee8d5" :extend t))))
-;;  '(org-block-end-line
-;;    ((t (:overline "#A7A6AA" :eackground "#fdf6e3" :extend t))))
-;;  )
+;; expand mini buffer
+(setq resize-mini-windows  t)
+(setq org-agenda-files (directory-files-recursively "~/Library/CloudStorage/Dropbox/org-work/" "\\.org$"))
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "INPROGRESS(s)" "HOLD(h)" "URGENT(u)" "IDEA(i)" "|" "DONE(d)" "CNCL(c)" )))
