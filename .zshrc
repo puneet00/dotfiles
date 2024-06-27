@@ -124,3 +124,9 @@ eval "$(starship init zsh)"
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/nixmage/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+if   [[ "$OSTYPE" == "linux-gnu" ]]; then
+  PATH="$HOME/.local/bin:$PATH"
+elif [[ "$OSTYPE" == "darwin"*  ]]; then
+
+fi
