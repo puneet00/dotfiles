@@ -3,6 +3,8 @@
 ## install yadm
 ```
 sudo apt-get install yadm
+# mac
+brew install yadm
 ```
 
 ## clone dotfiles
