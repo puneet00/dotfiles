@@ -27,6 +27,8 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 https://ohmyz.sh/#install
 
 ### fonts
+https://github.com/be5invis/Iosevka
+macinstall steps : https://github.com/be5invis/Iosevka
 ```
 https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/IosevkaTerm.zip
 wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/IosevkaTerm.zip \
