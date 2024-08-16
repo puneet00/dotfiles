@@ -25,6 +25,11 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 
 ### ohmyzsh
 https://ohmyz.sh/#install
+plugins:
+https://github.com/oldratlee/hacker-quotes
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+https://github.com/zsh-users/zsh-history-substring-search
+
 
 ### fonts
 https://github.com/be5invis/Iosevka
@@ -46,3 +51,14 @@ https://starship.rs/guide/
 sudo apt install fzf
 sudo apt-get install silversearcher-ag
 ```
+
+#doom emacs
+git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
+
+
+
+#mac only apps
+https://github.com/alienator88/Pearcleaner?tab=readme-ov-file
+
+
