@@ -1,5 +1,7 @@
 # getting started
 
+yay -S yadm zsh fzf the_silver_searcher 
+
 ## install yadm
 ```
 sudo apt-get install yadm
@@ -17,18 +19,17 @@ yadm clone https://github.com/puneet00/dotfiles.git
 ```
 sudo apt-get install zsh
 chsh -s$(which zsh)
-#plugins
+
+```
+
+## ohmyzsh
+https://ohmyz.sh/#install
+
+
+### plugins
 git clone https://github.com/oldratlee/hacker-quotes.git ~/.oh-my-zsh/custom/plugins/hacker-quotes
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-```
-
-### ohmyzsh
-https://ohmyz.sh/#install
-plugins:
-https://github.com/oldratlee/hacker-quotes
-https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
-https://github.com/zsh-users/zsh-history-substring-search
 
 
 ### fonts
