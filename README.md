@@ -1,6 +1,9 @@
 # getting started
+```sh
 
 yay -S yadm zsh fzf the_silver_searcher 
+yay -S telegram-desktop mullvad-vpn discord obsidian
+```
 
 ## install yadm
 ```
