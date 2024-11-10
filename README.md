@@ -60,6 +60,21 @@ sudo apt-get install silversearcher-ag
 git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
 
+# dev setup
+https://itsfoss.com/install-docker-arch-linux/
+```sh
+yay -S docker docker-compose
+sudo systemctl start docker.service
+sudo systemctl enable docker.service
+sudo usermod -aG docker $USER
+newgrp docker
+docker run hello-world
+
+## SQL client
+yay -S dbeaver
+
+```
+
 
 
 #mac only apps
