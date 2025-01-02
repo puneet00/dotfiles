@@ -71,6 +71,9 @@ set smartcase
 set ignorecase
 set number
 
+if !isdirectory($HOME . "/.vim/tmp")
+    call mkdir($HOME . "/.vim/tmp", "p", 0700)
+endif
 set backupdir=~/.vim/tmp/                   " for the backup files
 set directory=~/.vim/tmp/                   " for the swap files
 
