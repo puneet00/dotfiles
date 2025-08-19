@@ -78,7 +78,11 @@ yay -S dbeaver
 
 
 
-#mac only apps
+# mac only apps
 https://github.com/alienator88/Pearcleaner?tab=readme-ov-file
+https://matthewpalmer.net/rocket/
+https://numi.app/
+https://www.alfredapp.com/
+
 
 
