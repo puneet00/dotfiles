@@ -52,6 +52,7 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 https://starship.rs/guide/
 
 ### cli tools
+https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation
 ```
 sudo apt install fzf
 sudo apt-get install silversearcher-ag
