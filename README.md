@@ -1,13 +1,13 @@
 # getting started
 ```sh
 
-yay -S yadm zsh fzf the_silver_searcher 
+yay -S yadm zsh fzf the_silver_searcher zoxide
 yay -S telegram-desktop mullvad-vpn discord obsidian
 ```
 
 ## install yadm
 ```
-sudo apt-get install yadm
+yay -S yadm
 # mac
 brew install yadm
 ```
@@ -20,8 +20,8 @@ yadm clone https://github.com/puneet00/dotfiles.git
 ## tools
 ### install zsh
 ```
-sudo apt-get install zsh
-chsh -s$(which zsh)
+yay -S zsh
+chsh -s $(which zsh)
 
 ```
 
@@ -54,8 +54,6 @@ https://starship.rs/guide/
 ### cli tools
 https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation
 ```
-sudo apt install fzf
-sudo apt-get install silversearcher-ag
 ```
 
 #doom emacs
