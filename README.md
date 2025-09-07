@@ -6,7 +6,7 @@ yay -S telegram-desktop mullvad-vpn discord obsidian
 ```
 
 ## install yadm
-```
+``` sh
 yay -S yadm
 # mac
 brew install yadm
@@ -22,7 +22,7 @@ git clone https://github.com/lifepillar/vim-solarized8.git \
 
 ## tools
 ### install zsh
-```
+``` sh
 yay -S zsh
 chsh -s $(which zsh)
 
@@ -33,7 +33,7 @@ https://ohmyz.sh/#install
 
 
 ### plugins
-```
+``` sh
 git clone https://github.com/oldratlee/hacker-quotes.git ~/.oh-my-zsh/custom/plugins/hacker-quotes
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
 git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
@@ -44,7 +44,7 @@ git clone "https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git" "$Z
 ### fonts
 https://github.com/be5invis/Iosevka
 macinstall steps : https://github.com/be5invis/Iosevka
-```
+``` sh
 https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/IosevkaTerm.zip
 wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/IosevkaTerm.zip \
 && cd ~/.local/share/fonts \
@@ -67,7 +67,7 @@ https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
 
 # dev setup
 https://itsfoss.com/install-docker-arch-linux/
-```sh
+``` sh
 yay -S docker docker-compose
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
