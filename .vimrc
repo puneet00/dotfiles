@@ -32,7 +32,7 @@ Plug 'airblade/vim-gitgutter'             "sidebar git status
 Plug 'itchyny/lightline.vim'              "bottom status bar
 Plug 'sheerun/vim-polyglot'               "vim multi language support
 
-Plug 'altercation/vim-colors-solarized'   "theme
+"Plug 'altercation/vim-colors-solarized'   "theme
 "Plug 'trevordmiller/nova-vim'
 
 Plug 'tpope/vim-rails'                    "rails helper plugin
@@ -78,11 +78,11 @@ set backupdir=~/.vim/tmp/                   " for the backup files
 set directory=~/.vim/tmp/                   " for the swap files
 
 " Theme configs
-"set termguicolors
+set termguicolors
 syntax enable
 set background=light
 set t_Co=16
-colorscheme solarized
+colorscheme solarized8
 
 "set noshowmode
 set cursorline
