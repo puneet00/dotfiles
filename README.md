@@ -1,7 +1,7 @@
 # getting started
 ```sh
 
-yay -S yadm zsh fzf the_silver_searcher zoxide
+yay -S yadm zsh fzf the_silver_searcher zoxide vim
 yay -S telegram-desktop mullvad-vpn discord obsidian
 ```
 
@@ -13,8 +13,11 @@ brew install yadm
 ```
 
 ## clone dotfiles
-```
+``` sh
 yadm clone https://github.com/puneet00/dotfiles.git
+# vim theme
+git clone https://github.com/lifepillar/vim-solarized8.git \
+    ~/.vim/pack/themes/opt/solarized8
 ```
 
 ## tools
