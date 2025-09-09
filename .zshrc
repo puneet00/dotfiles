@@ -3,6 +3,9 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export HOMEBREW_NO_AUTO_UPDATE=1
+alias python=python3
+alias pip=pip3
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -126,17 +129,17 @@ eval "$(starship init zsh)"
 export PATH="/Users/nixmage/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-if   [[ "$OSTYPE" == "linux-gnu" ]]; then
-PATH="$HOME/.local/bin:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-elif [[ "$OSTYPE" == "darwin"*  ]]; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-fi
+#if   [[ "$OSTYPE" == "linux-gnu" ]]; then
+#PATH="$HOME/.local/bin:$PATH"
+#export PYENV_ROOT="$HOME/.pyenv"
+#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+#elif [[ "$OSTYPE" == "darwin"*  ]]; then
+  #export PYENV_ROOT="$HOME/.pyenv"
+  #[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+  #eval "$(pyenv init -)"
+  #eval "$(pyenv virtualenv-init -)"
+#fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -145,3 +148,39 @@ export NVM_DIR="$HOME/.nvm"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+
+. "$HOME/.local/bin/env"
+export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
+source ~/.rvm/scripts/rvm
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
+export PATH=$PATH:/opt/nginx/sbin/
+
+git_pull() {
+  local repo_root
+  repo_root=$(git rev-parse --show-toplevel)
+  local backup_dir="$repo_root/config/initializers/config_backup"
+  if git pull "$@"; then
+    mkdir -p "$backup_dir"
+    local files=("config.yml" "keys.yml")
+    for file in "${files[@]}"; do
+      cp "$repo_root/config/initializers/$file" "$backup_dir/$file"
+    done
+    echo "Backup of config files created at $backup_dir"
+    make -C "$repo_root" copy_all_configs
+    echo "Config files updated after successful git pull."
+  else
+    echo "git pull failed. Config files not updated."
+  fi
+}
+
+
+# fnm
+FNM_PATH="/opt/homebrew/opt/fnm/bin"
+if [ -d "$FNM_PATH" ]; then
+  eval "`fnm env`"
+fi

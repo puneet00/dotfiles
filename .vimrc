@@ -24,7 +24,7 @@ Plug 'dyng/ctrlsf.vim'                    "file search async
 Plug 'lifepillar/vim-mucomplete'          "autocomplete
 Plug 'yggdroot/indentline'                "show indent lines
 "Plug 'craigemery/vim-autotag'
-Plug 'airblade/vim-gitgutter'             "sidebar git status
+"Plug 'airblade/vim-gitgutter'             "sidebar git status
 "Plug 'tpope/vim-fugitive'                 "git wrapper
 "Plug 'w0rple'                           "async linting
 "Plug 'chiel92/vim-autoformat'             "formatter - needs setup
