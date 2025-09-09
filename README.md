@@ -1,7 +1,7 @@
 # getting started
 ```sh
 
-yay -S yadm zsh fzf the_silver_searcher zoxide vim
+yay -S yadm zsh fzf the_silver_searcher zoxide vim eza
 yay -S telegram-desktop mullvad-vpn discord obsidian
 ```
 
