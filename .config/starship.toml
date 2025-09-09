@@ -5,6 +5,7 @@ $hostname\
 $shlvl\
 $singularity\
 $directory\
+$python\
 $vcsh\
 $git_branch\
 $git_commit\
@@ -41,3 +42,8 @@ right_format = """$kubernetes"""
 [kubernetes]
 format = '☸ [$context](bold green)'
 disabled = false
+
+[python]
+format = 'via $symbol(${version} )(($virtualenv) )'
+pyenv_version_name = true
+
