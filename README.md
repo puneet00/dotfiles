@@ -1,3 +1,11 @@
+# mac
+``` sh
+brew install font-fira-code
+brew install yadm
+
+```
+
+
 # getting started
 ```sh
 
@@ -8,8 +16,6 @@ yay -S telegram-desktop mullvad-vpn discord obsidian
 ## install yadm
 ``` sh
 yay -S yadm
-# mac
-brew install yadm
 ```
 
 ## clone dotfiles
