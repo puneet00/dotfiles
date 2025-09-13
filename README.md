@@ -64,6 +64,7 @@ https://starship.rs/guide/
 
 ### cli tools
 https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation
+https://docs.atuin.sh/#quickstart
 ```
 ```
 
