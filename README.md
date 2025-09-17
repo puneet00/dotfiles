@@ -1,7 +1,11 @@
 # mac
 ``` sh
+https://brew.sh/
 brew install font-fira-code
 brew install yadm
+brew install zoxide
+brew install lsd
+brew install zsh
 
 ```
 
@@ -9,7 +13,7 @@ brew install yadm
 # getting started
 ```sh
 
-yay -S yadm zsh fzf the_silver_searcher zoxide vim eza
+yay -S yadm zsh fzf the_silver_searcher zoxide vim lsd
 yay -S telegram-desktop mullvad-vpn discord obsidian
 ```
 
@@ -20,7 +24,7 @@ yay -S yadm
 
 ## clone dotfiles
 ``` sh
-yadm clone https://github.com/puneet00/dotfiles.git
+yadm clone git@github.com:puneet00/dotfiles.git
 # vim theme
 git clone https://github.com/lifepillar/vim-solarized8.git \
     ~/.vim/pack/themes/opt/solarized8
@@ -94,6 +98,12 @@ https://github.com/alienator88/Pearcleaner?tab=readme-ov-file
 https://matthewpalmer.net/rocket/
 https://numi.app/
 https://www.alfredapp.com/
+https://www.raycast.com/
+https://code.visualstudio.com/docs/?dv=osx
+https://www.synaptics.com/products/displaylink-graphics/downloads/macos
+https://www.mowglii.com/itsycal/
+https://ticktick.com/download?language=en_us
+
 
 
 
