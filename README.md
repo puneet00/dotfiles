@@ -15,6 +15,7 @@ brew install zsh
 
 yay -S yadm zsh fzf the_silver_searcher zoxide vim lsd
 yay -S telegram-desktop mullvad-vpn discord obsidian
+yay -S ttf-ia-writer
 ```
 
 ## install yadm
