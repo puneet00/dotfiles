@@ -6,6 +6,8 @@ brew install yadm
 brew install zoxide
 brew install lsd
 brew install zsh
+brew install --cask font-monaspace
+brew install --cask font-ia-writer-quattro
 
 ```
 
