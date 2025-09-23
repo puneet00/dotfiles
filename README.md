@@ -8,6 +8,7 @@ brew install lsd
 brew install zsh
 brew install --cask font-monaspace
 brew install --cask font-ia-writer-quattro
+brew install awscli
 
 ```
 
@@ -107,7 +108,8 @@ https://www.synaptics.com/products/displaylink-graphics/downloads/macos
 https://www.mowglii.com/itsycal/
 https://tunnelblick.net/downloads.html
 https://ticktick.com/download?language=en_us
-
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html
+https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
 
 
 
