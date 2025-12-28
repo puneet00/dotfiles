@@ -1,7 +1,14 @@
 # mac
 ``` sh
+https://brew.sh/
 brew install font-fira-code
 brew install yadm
+brew install zoxide
+brew install lsd
+brew install zsh
+brew install --cask font-monaspace
+brew install --cask font-ia-writer-quattro
+brew install awscli
 
 ```
 
@@ -9,8 +16,9 @@ brew install yadm
 # getting started
 ```sh
 
-yay -S yadm zsh fzf the_silver_searcher zoxide vim eza
+yay -S yadm zsh fzf the_silver_searcher zoxide vim lsd
 yay -S telegram-desktop mullvad-vpn discord obsidian
+yay -S ttf-ia-writer
 ```
 
 ## install yadm
@@ -20,7 +28,7 @@ yay -S yadm
 
 ## clone dotfiles
 ``` sh
-yadm clone https://github.com/puneet00/dotfiles.git
+yadm clone git@github.com:puneet00/dotfiles.git
 # vim theme
 git clone https://github.com/lifepillar/vim-solarized8.git \
     ~/.vim/pack/themes/opt/solarized8
@@ -64,6 +72,7 @@ https://starship.rs/guide/
 
 ### cli tools
 https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation
+https://docs.atuin.sh/#quickstart
 ```
 ```
 
@@ -93,6 +102,14 @@ https://github.com/alienator88/Pearcleaner?tab=readme-ov-file
 https://matthewpalmer.net/rocket/
 https://numi.app/
 https://www.alfredapp.com/
+https://www.raycast.com/
+https://code.visualstudio.com/docs/?dv=osx
+https://www.synaptics.com/products/displaylink-graphics/downloads/macos
+https://www.mowglii.com/itsycal/
+https://tunnelblick.net/downloads.html
+https://ticktick.com/download?language=en_us
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html
+https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
 
 
 
