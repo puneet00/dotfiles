@@ -145,20 +145,20 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
+## atuin setup START
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
 
-. "$HOME/.local/bin/env"
-export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
-source ~/.rvm/scripts/rvm
-export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
-export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
-export PATH=$PATH:/opt/nginx/sbin/
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  . "$HOME/.local/bin/env"
+  export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
+  source ~/.rvm/scripts/rvm
+  export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
+  export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
+  export PATH=$PATH:/opt/nginx/sbin/
+fi
 
 git_pull() {
   local repo_root
@@ -177,6 +177,7 @@ git_pull() {
     echo "git pull failed. Config files not updated."
   fi
 }
+## atuin setup END
 
 
 # fnm
