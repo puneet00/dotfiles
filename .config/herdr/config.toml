@@ -1,0 +1,52 @@
+# herdr configuration
+# Reload without restarting: `herdr server reload-config` or prefix+shift+r
+
+onboarding = false
+
+[theme]
+# Matches the Ghostty solarized light/dark auto-switch setup
+auto_switch = true
+dark_name = "solarized"
+light_name = "solarized-light"
+
+[ui]
+# Show which agent is in each split's border — the main reason to run herdr
+show_agent_labels_on_pane_borders = true
+
+# Order the agent panel by attention queue rather than by space,
+# so whoever needs input floats to the top. Use "spaces" for stable ordering.
+agent_panel_sort = "priority"
+
+# Don't interrupt with a name prompt on every new tab
+prompt_new_tab_name = false
+
+# Reclaim a row when a workspace only has one tab
+hide_tab_bar_when_single_tab = true
+
+accent = "cyan"
+
+[ui.toast]
+# plasmashell owns org.freedesktop.Notifications here, so desktop popups work
+delivery = "system"
+delay_seconds = 1
+
+[ui.sound]
+enabled = true
+
+[session]
+# Reattach Claude Code panes to their real conversations after a server restart
+resume_agents_on_restore = true
+
+[keys]
+# Defaults are tmux-like (prefix = ctrl+b) and don't collide with the
+# ctrl+shift+* splits bound in Ghostty, so they're left alone.
+# These two are unbound by default and worth having:
+switch_workspace = "prefix+shift+1..9"
+focus_agent = "prefix+alt+1..9"
+
+[experimental]
+# Keep recent pane scrollback across full server restarts
+pane_history = true
+
+[advanced]
+scrollback_limit_bytes = 10000000

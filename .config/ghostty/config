@@ -1,3 +1,59 @@
-theme = "iTerm2 Solarized Light"
-font-family = "IosevkaTerm Nerd Font Mono"
-font-size = 16
+# ~/.config/ghostty/config
+# Reload in place with ctrl+shift+r
+
+# --- Appearance ---
+# Follows the system light/dark preference (KDE sets this)
+theme = light:iTerm2 Solarized Light,dark:iTerm2 Solarized Dark
+window-theme = auto
+
+font-family = "JetBrainsMono Nerd Font"
+font-size = 12
+# Uncomment to kill ligatures (-> becomes two glyphs again)
+# font-feature = -calt, -liga, -dlig
+adjust-cell-height = 8%
+
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+window-decoration = auto
+window-save-state = always
+
+background-opacity = 0.96
+# KDE Wayland honors this
+background-blur = 20
+
+cursor-style = block
+cursor-style-blink = false
+mouse-hide-while-typing = true
+unfocused-split-opacity = 0.9
+# stop the "80x24" popup on every resize
+resize-overlay = never
+
+# --- Behavior ---
+# bytes, ~10MB
+scrollback-limit = 10000000
+copy-on-select = clipboard
+clipboard-trim-trailing-spaces = true
+confirm-close-surface = false
+link-url = true
+
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+gtk-single-instance = true
+gtk-tabs-location = top
+
+# --- Keybinds ---
+keybind = ctrl+shift+enter=new_split:right
+keybind = ctrl+shift+d=new_split:down
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+l=goto_split:right
+keybind = ctrl+shift+k=goto_split:up
+keybind = ctrl+shift+j=goto_split:down
+keybind = ctrl+shift+z=toggle_split_zoom
+keybind = ctrl+shift+r=reload_config
+
+# --- Optional: drop-down quick terminal ---
+# Needs the GlobalShortcuts portal; approve it in KDE System Settings on first use.
+# quick-terminal-position = top
+# keybind = global:ctrl+grave_accent=toggle_quick_terminal
