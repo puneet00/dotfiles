@@ -30,8 +30,9 @@ yay -S yadm
 ``` sh
 yadm clone git@github.com:puneet00/dotfiles.git
 # vim theme
-git clone https://github.com/lifepillar/vim-solarized8.git \
+git clone https://codeberg.org/lifepillar/vim-solarized8.git \
     ~/.vim/pack/themes/opt/solarized8
+
 ```
 
 ## tools
